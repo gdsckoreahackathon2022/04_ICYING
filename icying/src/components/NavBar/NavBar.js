@@ -22,9 +22,9 @@ function NavBar() {
               ></img>
             </Navbar.Brand>
             <Nav className="nav-button">
-              <Nav.Link href="/RegisterPage/">필요해요</Nav.Link>
-              <Nav.Link href="/RegisterPage/">받았어요</Nav.Link>
-              <Nav.Link href="/RewardPage/">마이 리워드</Nav.Link>
+              <Nav.Link href="/register/need">필요해요</Nav.Link>
+              <Nav.Link href="/register/get">받았어요</Nav.Link>
+              <Nav.Link href="/reward">마이 리워드</Nav.Link>
             </Nav>
             <div>
             <div className="nav-right">로그아웃</div>
