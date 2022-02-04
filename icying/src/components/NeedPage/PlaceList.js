@@ -48,7 +48,7 @@ function PlaceList() {
     )
   })
   return (
-    <div className='PlaceList'>
+    <div className='whiteCont'>
       <div>{renderPlaces}</div>
     </div>
   )

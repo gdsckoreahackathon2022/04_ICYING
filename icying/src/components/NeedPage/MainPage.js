@@ -5,7 +5,7 @@ import './NeedPage.css';
 function MainPage() {
 
   return (
-    <div className='MainPage'>
+    <div className='MainPage topCont'>
       <div className='mainTitle'>ICYING SAVES GREEN🧊</div>
       <div className='mainTxt'>
         <p>누군가는 사고, 누군가는 버리는 아이스팩. <br />
