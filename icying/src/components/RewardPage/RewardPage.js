@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import "./RewardPage.css";
-import reward1 from '../../assets/images/아이싱 리워드 1_cut.png';
-import reward1000 from '../../assets/images/아이싱 리워드 1000_cut.png';
 
 function RewardPage() {
     const [pagename, setPageName] = useState();
@@ -43,7 +41,7 @@ function RewardPage() {
           return (
               <div className = 'post' key={post.index}>
                 <div className="recordContainer">
-                <img className="resimg" src={reward1}/>               
+                <img className="resimg" src={post.logo_image_url}/>               
                 <div className="icenum">{post.ice_number}개</div>
                 <div className="resname">{post.restaurant.name}</div>
                 <div className="icedate">{post.created_at}</div>
@@ -108,7 +106,7 @@ function RewardPage() {
             return (
                 <div className = 'post' key={post.index}>
                   <div className="recordContainer">
-                  <img className="medalimg" src={reward1000}/>               
+                  <img className="medalimg" src={post.logo_image_url}/>               
                   <div className="badgename">{post.content}</div>
                   <div className='icedate'>{post.created_at}</div>
                   </div>

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { token } from '../Config'
 import './NeedPage.css';
 
 function PlaceRead() {
@@ -14,6 +16,22 @@ function PlaceRead() {
       descript: "안녕하세요! 몬스터플레이스입니다~"
     }
   ];
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  // const [places, setPlaces] = useState("");
+  const getData = async () => {
+    const headers = {
+      'Authorization': token
+    }
+    const response = await axios.get(
+      baseUrl + "/restaurant/1", {headers}     
+    );
+    console.log(response.data.response)
+    console.log(response.data.response.name)
+    // setPlaces(places, ...response.data.response)
+  };  
+  useEffect(() => {
+    getData();
+  }, []);
   const renderPlaces = places && places.map(place => {
     const ice_num = place.ice_need_number == "free" ? "많이" : place.ice_need_number+"개";
     return (
@@ -22,7 +40,6 @@ function PlaceRead() {
         <div className='placeReadName'>{place.name}</div>
         <div className='placeAddr'>{place.address}</div>
         <div className='needNumTxt'><p>{ice_num}</p> 필요해요!</div>          
-        {/* free */}
         <div>{place.descript}</div>
       </div>
     )
