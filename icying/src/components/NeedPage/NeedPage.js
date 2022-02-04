@@ -12,7 +12,7 @@ function NeedPage() {
         <button className='whiteBtn'>매장 등록</button>
       </div>
       <PlaceList />
-      <PlaceRead />
+      {/* <PlaceRead /> */}
     </div>
   )
 }

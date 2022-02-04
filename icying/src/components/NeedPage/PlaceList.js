@@ -1,4 +1,5 @@
 import React from 'react';
+import './NeedPage.css';
 
 function PlaceList() {
   const places = [
@@ -9,7 +10,8 @@ function PlaceList() {
       latitude: 126.19893898,
       longitude: 36.1231412,
       distance: "0.5km",
-      logo_image_url: "https://example.com/image.png",
+      // logo_image_url: "https://example.com/image.png",
+      logo_image_url: "img",
       is_full: false
     }, {
       restaurant_id: "2",
@@ -33,16 +35,20 @@ function PlaceList() {
   ];
   const renderPlaces = places && places.map(place => {
     return (
-      <div className='place' key={place.restaurant_id}>
-        <div>{place.logo_image_url}</div>
-        <div>{place.name}</div>
-        <div>{place.distance}</div>
-        <div>{place.address}</div>
+      <div className='PlaceListContainer' key={place.restaurant_id}>
+        <img className='listImg' src='{place.logo_image_url}'></img>
+        <div className='placeTxtContainer'>
+          <div className='flexBetween'>
+            <div className='placeName'>{place.name}</div>
+            <div className='placeDist'>{place.distance}</div>
+          </div>
+          <div className='placeAddr'>{place.address}</div>
+        </div>
       </div>
     )
   })
   return (
-    <div>
+    <div className='PlaceList'>
       <div>{renderPlaces}</div>
     </div>
   )
