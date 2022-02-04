@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './RegisterPage.css'
+import { token } from '../Config'
 
 function RegisterGet() {
-  // const restName = "안녕"
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   const [restName, setRestName] = useState("");
   const getData = async () => {
-    await axios
-      .get("/my-restraurant")
-      .then((response) => {
-        console.log(response.data);
-        setRestName(response.data.restaurant_id);
-      })
-      .catch((error) => {
-        console.error(error)
-      })
-  }
+    const headers = {
+      'Authorization': token
+    }
+    const response = await axios.get(
+      baseUrl + "/my-restaurant/", {headers}     
+    );
+    setRestName(response.data.response.name)
+  };  
   useEffect(() => {
     getData();
   }, []);
-  
+
   return (
     <div className='RegisterNeed topCont'>
       <div className='blueContainer'>
