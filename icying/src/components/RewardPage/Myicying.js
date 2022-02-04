@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import "./RewardPage.css";
-import reward10 from '../../assets/images2/아이싱 리워드 10_cut.png';
 
 function RewardPage() {
     const posts = [
@@ -61,7 +60,7 @@ function RewardPage() {
           return (
               <div className = 'post' key={post.index}>
                 <div className="reslistContainer">
-                <img className="resimg2" src={reward10}/>               
+                <img className="resimg2" src={post.logo_image_url}/>               
                 <div className="resname2">{post.restaurant.name}</div>
                 <div className="columnContainer">
                 <div className="icenum2">{post.ice_number}개</div>

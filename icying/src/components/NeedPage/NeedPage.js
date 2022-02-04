@@ -4,7 +4,8 @@ import PlaceRead from './PlaceRead';
 import './NeedPage.css';
 
 function NeedPage() {
-
+  const hello = 1
+  const page = hello ? <PlaceList /> : <PlaceRead />
   return (
     <div className='blueContainer'>
       <div className='flexBetween'>
@@ -13,8 +14,7 @@ function NeedPage() {
         <button className='whiteBtn'>매장 등록</button>
         </a>
       </div>
-      <PlaceList />
-      {/* <PlaceRead /> */}
+      {page}
     </div>
   )
 }

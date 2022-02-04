@@ -7,10 +7,9 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 37.54646381507674,
-  lng: 126.96484448377461
+  lat: 35.8348707,
+  lng: 128.580119
 };
-
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
