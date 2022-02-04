@@ -1,0 +1,186 @@
+ .bigcontainer {
+     background-color: #D7E1EE;
+     margin-top: 55px;
+     margin-right: 212px;
+     margin-left: 212px;
+     padding: 1px;
+     max-width: 800px;
+ }
+
+ .flexcenter {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .reward-img {
+     height: 150px;
+ }
+
+ .medal {
+    height: 60px;
+ }
+
+ .resimg {
+     width: 130px;
+ }
+
+ .icenum {
+     color: #FF89C0;
+     font-weight: bold;
+     font-size: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .icedate {
+    color: darkgray;
+ }
+
+ .resname{
+    font-weight: bold;
+ }
+
+ .medalimg {
+    width: 200px;
+}
+
+.badgename {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ .recordContainer {
+    float: left;
+    font-size:15px;
+ }
+
+ .topcontainer {
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+ }
+
+ .bottomcontainer {
+    background-color: white;
+    margin: 25px;
+    padding-bottom: 25px;
+ }
+
+ .reward-title {
+    font-size: 1.2rem;
+    color: #1E56A0;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.seemore {
+    font-size: 0.9rem;
+    color: #1E56A0;
+    width: 50px;
+    padding: 1rem;
+}
+
+.sidetoside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.postContainer1 {
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+}
+
+.postContainer2 {
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.postContainer {
+    display: flex; 
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.miniContainer {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.listcontainer {
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+ }
+
+ .columnContainer {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     font-size: 0.7rem;
+     font-weight: bold;
+     margin-right: 1rem;
+     margin-left: 1rem;
+ }
+
+ .reslistContainer {
+    float: left;
+    font-size:15px;
+    display: flex;
+    align-items: center;
+    border: 3px solid #1E56A0;
+    margin: 0.5rem 6rem 0.5rem 6rem;
+ }
+
+ .resname2{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 5rem;
+ }
+ .icenum2 {
+    color: #FF89C0;
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seemore2 {
+    font-size: 0.8rem;
+    color: #1E56A0;
+    padding-right: 0.3rem;
+}
+
+.sidetoside2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.resimg2 {
+    width: 70px;
+}
+
+.sorting {
+    display: flex;
+}
+
+.paginationcss {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 1rem;
+    color: #1E56A0;
+}

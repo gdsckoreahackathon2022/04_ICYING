@@ -1,0 +1,65 @@
+  .navBar {
+    font-weight: bold;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-div {
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-bottom-color:#1E56A0;
+    box-shadow: 0 4px 4px -4px;
+  }
+
+  .nav-logo {
+    position: relative;
+    width: 80px;
+    left: 0px;
+    background-size: contain;
+    float: left;
+  }
+
+  .nav-logotext {
+    position: relative;
+    width: 100px;
+    left: 0px;
+    margin-top: 15px;
+    background-size: contain;
+    float: left;
+  }
+
+  .nav-name {
+      color: black;
+      float: left;
+      line-height: 300%;
+      font-size: 1.3rem;
+      margin-right: 1rem; 
+  }
+
+  .nav-button {
+      text-decoration: none;
+      font-size: 15px;
+      color: #1E56A0;
+      float: left;
+  }
+
+  .nav-right {
+      float: right;
+      font-size: 1rem;
+      color: #1E56A0;
+      line-height: 300%;
+      margin: left 1rem;
+      margin-right: 1rem;
+      margin-top: 0.3rem;
+  }
+  
+  .nav-link {
+    color: #1E56A0 !important;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 2rem;
+    line-height: 270%;
+    align: center;
+  }
