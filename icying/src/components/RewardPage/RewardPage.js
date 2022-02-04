@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import "./RewardPage.css";
-import reward1 from '../../assets/images/아이싱 리워드 1_cut.png';
-import reward1000 from '../../assets/images/아이싱 리워드 1000_cut.png';
+import reward1 from '../../assets/images2/아이싱 리워드 1_cut.png';
+import reward1000 from '../../assets/images2/아이싱 리워드 1000_cut.png';
 
 function RewardPage() {
-    const [pagename, setPageName] = useState();
     const posts1 = [
         {
           "index": 1,
@@ -123,9 +122,11 @@ function RewardPage() {
             <div className='reward-title'>마이 아이싱 리워드</div>
             <div className="topcontainer">
                 <div className="sidetoside">
-                    <div className="seemore"></div>
+                    <div className="see"></div>
                     <div className='reward-title' style={{textAlign: "center"}} >아이싱 레코드</div>
-                    <div className="seemore">더보기</div>
+                    <a href={"/reward/myicying"}>
+                    <button className="seemore">더보기</button>
+                    </a>
                 </div>
                 <div className='postContainer1'>{renderPosts1}</div>
             </div>

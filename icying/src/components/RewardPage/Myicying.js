@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useState } from "react";
 import "./RewardPage.css";
-import reward10 from '../../assets/images/아이싱 리워드 10_cut.png';
+import reward10 from '../../assets/images2/아이싱 리워드 10_cut.png';
 
 function RewardPage() {
     const posts = [

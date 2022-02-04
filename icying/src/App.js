@@ -16,7 +16,7 @@ function App() {
         <div>        
           <Routes>
             <Route exact path="/" element={<MainPage />}></Route>
-            <Route path="/detail" element={<PlaceRead />}></Route>
+            <Route path="/detail/:id" element={<PlaceRead />}></Route>
             <Route path="/register/need" element={<RegisterNeed />}></Route>
             <Route path="/register/get" element={<RegisterGet />}></Route>
             <Route path="/reward" element={<RewardPage />}></Route>
