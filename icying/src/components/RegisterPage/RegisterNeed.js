@@ -20,7 +20,7 @@ function RegisterNeed() {
           </div>
           <div className='labelInput'>
             <div className='rightTxt'>필요 개수</div>
-            <input placeholder='숫자 입력'></input>
+            <input className='inputNum' placeholder='숫자 입력'></input>
             <div className='flexRow'>
               <input type="checkbox"></input>
               <div>상관 없어요</div>
@@ -36,7 +36,7 @@ function RegisterNeed() {
               placeholder='필수 포함 요소: 영업 시간, 아이스팩 개당 리워드 (ex. 아이스팩 10개에 500원 할인 쿠폰)'>
             </textarea>
           </div>
-          <button className='btnBlue'>매장 등록</button>
+          <button className='blueBtn'>매장 등록</button>
         </div>
       </div>
     </div>

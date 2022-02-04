@@ -1,0 +1,49 @@
+.rightTxt {
+  font-weight: bold;
+  color: black;
+  font-size: 1rem;
+  margin-right: 10px;
+  width: 86px;
+  text-align: right;
+}
+.labelInput {
+  display: flex;
+  margin-bottom: 15px;
+}
+.flexRow {
+  display: flex;  
+  align-items: center;
+}
+.flexCol {
+  display: flex;  
+  flex-direction: column;
+}
+.labelInput > .flexCol :first-child {
+  margin-bottom: 6px;
+}
+.labelInput > input,
+.labelInput > .flexCol > input,
+.labelInput > textarea {
+  width: 200px;
+}
+.inputNum {
+  max-width: 60px;
+}
+.inputNum + .flexRow {
+  margin-left: 30px;
+}
+.blueBtn {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 30px;
+  background-color: #1E56A0;
+  height: 30px;
+  margin: 15px 0 25px;
+}
+.checkDescription {
+  font-size: 0.7rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #9F9F9F;
+}
