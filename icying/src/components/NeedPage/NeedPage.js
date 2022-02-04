@@ -10,7 +10,9 @@ function NeedPage() {
     <div className='blueContainer'>
       <div className='flexBetween'>
         <div className='blueTxt'>내 주변 아이스팩 필요 매장</div>
+        <a href={"/register/need"}>
         <button className='whiteBtn'>매장 등록</button>
+        </a>
       </div>
       {page}
     </div>

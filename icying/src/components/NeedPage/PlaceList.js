@@ -36,6 +36,8 @@ function PlaceList() {
   const renderPlaces = places && places.map(place => {
     return (
       <div className='PlaceListContainer' key={place.restaurant_id}>
+        <a href={"/detail/${place.restaurant_id}"} style={{textDecoration: "none",
+    color: "black"}} className='aflex'>
         <img className='listImg' src='{place.logo_image_url}'></img>
         <div className='placeTxtContainer'>
           <div className='flexBetween'>
@@ -44,6 +46,7 @@ function PlaceList() {
           </div>
           <div className='placeAddr'>{place.address}</div>
         </div>
+        </a>
       </div>
     )
   })

@@ -76,11 +76,21 @@
     font-weight: bold;
 }
 
-.seemore {
+.see {
     font-size: 0.9rem;
     color: #1E56A0;
     width: 50px;
     padding: 1rem;
+}
+
+.seemore {
+    font-size: 0.9rem;
+    color: #60ABFB;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: 2px solid #60ABFB;
+    border-radius: 15px;
 }
 
 .sidetoside {
