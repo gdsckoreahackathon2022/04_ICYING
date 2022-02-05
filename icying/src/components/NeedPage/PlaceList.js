@@ -1,44 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { token } from '../Config'
 import './NeedPage.css';
 
+
 function PlaceList() {
-  const places = [
-    {
-      restaurant_id: "1",
-      name: "몬스터플레이스 숙대점",
-      address: "서울특별시 용산구 청파동 청파로43길 70",
-      latitude: 126.19893898,
-      longitude: 36.1231412,
-      distance: "0.5km",
-      // logo_image_url: "https://example.com/image.png",
-      logo_image_url: "img",
-      is_full: false
-    }, {
-      restaurant_id: "2",
-      name: "몬스터플레이스 숙대점",
-      address: "서울특별시 용산구 청파동 청파로43길 70",
-      latitude: 126.19893898,
-      longitude: 36.1231412,
-      distance: "0.5km",
-      logo_image_url: "https://example.com/image.png",
-      is_full: false
-    }, {
-      restaurant_id: "3",
-      name: "몬스터플레이스 숙대점",
-      address: "서울특별시 용산구 청파동 청파로43길 70",
-      latitude: 126.19893898,
-      longitude: 36.1231412,
-      distance: "0.5km",
-      logo_image_url: "https://example.com/image.png",
-      is_full: false
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  const [places, setPlaces] = useState("");
+  const getData = async () => {
+    const headers = {
+      'Authorization': token
     }
-  ];
+    const response = await axios.get(
+      baseUrl + "/restaurant/?latitude=37.5441270&longitude=126.9667812&page=1", {headers}     
+    );
+    setPlaces(response.data.results)
+    console.log(response.data.results)
+  };  
+  useEffect(() => {
+    getData();
+  }, []);
   const renderPlaces = places && places.map(place => {
     return (
       <div className='PlaceListContainer' key={place.restaurant_id}>
         <a href={"/detail/${place.restaurant_id}"} style={{textDecoration: "none",
     color: "black"}} className='aflex'>
-        <img className='listImg' src='{place.logo_image_url}'></img>
+        <img className='listImg' src={place.logo_image_url}></img>
         <div className='placeTxtContainer'>
           <div className='flexBetween'>
             <div className='placeName'>{place.name}</div>
