@@ -15,7 +15,7 @@ Copyright © ICYING. All rights reserved
 
 ### 🧊 Deploy URLs
 
-- backend : [http://34.64.142.218/api/v1/](http://34.64.142.218/api/v1/)
+- backend : [https://icying.du.r.appspot.com/](https://icying.du.r.appspot.com/)
 
 🧊 **GOAL**
 
