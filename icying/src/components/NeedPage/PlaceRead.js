@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 import { token } from '../Config'
 import './NeedPage.css';
 
-function PlaceRead() {
+const PlaceRead = (props) => {
+  let { id } = useParams();
+  console.log("넘어오는 데이터: ", id);
+
   const baseUrl = process.env.REACT_APP_BASE_URL;
   const [place, setPlace] = useState("");
   const getData = async () => {
     const headers = {
       'Authorization': token
-    }
+    }  
+
     const response = await axios.get(
-      baseUrl + "/restaurant/3", {headers}     
+      baseUrl + "/restaurant/"+id, {headers}     
     );
     setPlace(response.data.response)
+    console.log(response.data.response)
   };  
   useEffect(() => {
     getData();
