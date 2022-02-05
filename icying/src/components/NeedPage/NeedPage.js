@@ -3,6 +3,7 @@ import PlaceList from './PlaceList';
 import PlaceRead from './PlaceRead';
 import MapAPI from './MapAPI';
 import './NeedPage.css';
+import MapAPI from './MapAPI';
 
 function NeedPage() {
   const hello = 1
@@ -15,8 +16,10 @@ function NeedPage() {
         <button className='whiteBtn'>매장 등록</button>
         </a>
       </div>
-      <MapAPI/>
-      {page}
+      <div className='flexRow'>
+        {page}
+        <div className="mapApi"><MapAPI /></div>        
+      </div>
     </div>
   )
 }

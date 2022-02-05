@@ -46,6 +46,10 @@
   height: 30px;
   margin-left: 20px;
 }
+.mapApi {
+  margin-left: 15px;
+  background-color: red;
+}
 
 /* PlaceList */
 .whiteCont {
@@ -70,6 +74,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 230px;
 }
 .placeName {
   font-size: 1.1rem;
