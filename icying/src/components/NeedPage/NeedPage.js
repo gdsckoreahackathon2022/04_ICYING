@@ -1,6 +1,7 @@
 import React from 'react';
 import PlaceList from './PlaceList';
 import PlaceRead from './PlaceRead';
+import MapAPI from './MapAPI';
 import './NeedPage.css';
 
 function NeedPage() {
@@ -14,7 +15,10 @@ function NeedPage() {
         <button className='whiteBtn'>매장 등록</button>
         </a>
       </div>
-      {page}
+      <div className='flexRow flexWrap'>
+        {page}
+        <div className="mapApi"><MapAPI /></div>        
+      </div>
     </div>
   )
 }
