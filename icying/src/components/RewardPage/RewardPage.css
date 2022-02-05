@@ -23,6 +23,9 @@
 
  .resimg {
      width: 130px;
+     height: 130px;
+     object-fit: fill;
+     
  }
 
  .icenum {
@@ -54,6 +57,7 @@
  .recordContainer {
     float: left;
     font-size:15px;
+    transform: translate(130,130);
  }
 
  .topcontainer {
@@ -150,12 +154,13 @@
     align-items: center;
     border: 3px solid #1E56A0;
     margin: 0.5rem 6rem 0.5rem 6rem;
+    min-width: 400px;
+    justify-content: space-between;
  }
 
  .resname2{
     font-weight: bold;
     font-size: 1rem;
-    margin-right: 5rem;
  }
  .icenum2 {
     color: #FF89C0;
@@ -181,6 +186,8 @@
 
 .resimg2 {
     width: 70px;
+    height: 70px;
+    object-fit: fill;
 }
 
 .sorting {
