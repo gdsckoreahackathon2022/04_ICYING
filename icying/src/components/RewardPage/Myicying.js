@@ -1,69 +1,33 @@
-import React, { useEffect } from 'react';
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { token } from '../Config'
 import "./RewardPage.css";
 
 function RewardPage() {
-    const posts = [
-        {
-          "index": 1,
-          "restaurant": {
-            "restaurant_id": 1,
-            "name": "몬스터플레이스 숙대점",
-            "logo_image_url": "https://s3-example.com/bucket/object.png"
-          },
-          "ice_number": 100,
-          "created_at": "2021-06-25"
-        },
-        {
-          "index": 2,
-          "restaurant": {
-            "restaurant_id": 1,
-            "name": "몬스터플레이스 숙대점",
-            "logo_image_url": "https://s3-example.com/bucket/object.png"
-          },
-          "ice_number": 100,
-          "created_at": "2021-06-25"
-        },
-        {
-          "index": 3,
-          "restaurant": {
-            "restaurant_id": 1,
-            "name": "몬스터플레이스 숙대점",
-            "logo_image_url": "https://s3-example.com/bucket/object.png"
-          },
-          "ice_number": 100,
-          "created_at": "2021-06-25"
-        },
-        {
-            "index": 4,
-            "restaurant": {
-              "restaurant_id": 1,
-              "name": "몬스터플레이스 숙대점",
-              "logo_image_url": "https://s3-example.com/bucket/object.png"
-            },
-            "ice_number": 100,
-            "created_at": "2021-06-25"
-          },
-          {
-            "index": 5,
-            "restaurant": {
-              "restaurant_id": 1,
-              "name": "몬스터플레이스 숙대점",
-              "logo_image_url": "https://s3-example.com/bucket/object.png"
-            },
-            "ice_number": 100,
-            "created_at": "2021-06-25"
-          }
-      ];
+    const baseUrl = process.env.REACT_APP_BASE_URL;
+    const [records, setRecords] = useState("");
+    const getData = async () => {
+      const headers = {
+        'Authorization': token
+      }
+      const response = await axios.get(
+        baseUrl + "/rewards/record/?display=10&query=biggest", {headers}     
+      );
+      setRecords(response.data.response.records)
+      console.log(response.data.response.records)
+    };  
+    useEffect(() => {
+      getData();
+    }, []);
 
-      const renderPosts = posts && posts.map(post => {
+      const renderPosts = records && records.map(post => {
           return (
-              <div className = 'post' key={post.index}>
+              <div className = 'post' key={post.donation_id}>
                 <div className="reslistContainer">
-                <img className="resimg2" src={post.logo_image_url}/>               
+                <img className="resimg2" src={post.restaurant.logo_image_url}/>               
                 <div className="resname2">{post.restaurant.name}</div>
                 <div className="columnContainer">
-                <div className="icenum2">{post.ice_number}개</div>
+                <div className="icenum2">{post.ice_pack_number}개</div>
                 <div>{post.created_at}</div>
                 </div>
                 </div>
