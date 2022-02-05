@@ -25,14 +25,15 @@ Copyright © ICYING. All rights reserved
 🧊 **PROBLEM**
 
 - **환경적 문제 상황**
-    
-    ![problem.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7c298ca6-6d04-4f2a-a8da-ff9ecd2ad3e2/problem.png)
+![problem](https://user-images.githubusercontent.com/67955977/152625787-82cb283e-74fd-4350-9e50-d079f12b178a.png)
+
     
     코로나19 펜데믹으로 비대면 거래가 증가하며 식료품 거래시 동봉되는 ****아이스팩 사용량 급증, 2020년에만 국내 아이스팩 생산량이 2.6억개에 달했다. 문제는 아이스팩 대부분이 미세플라스틱의 일종인 고흡수성폴리머로 구성되어 이를 소각하는 과정에서는 이산화탄소가 대량 발생하는 문제가, 매립시에는 토양 오염이 발생한다.
     
 - **기존의 지자체 솔루션**
     
-    ![기존시스템2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ddee6e02-0bda-47e6-9ccf-1f2bb777b56f/기존시스템2.png)
+![기존시스템2](https://user-images.githubusercontent.com/67955977/152625799-e68081d2-9dc5-4475-9e17-a41e9360b8c6.png)
+
     
     아이스팩을 지자체 복지센터로 직접 반납 → 지자체의 센터에서 선별, 세척, 소독 → 지자체쪽에서 아이스팩의 수요가있는 업체를 직접 찾아 배부. **과정이 복잡하고 많은 인력이 필요해 사실상 방치되어 있는 상태**이다.
     
@@ -40,7 +41,8 @@ Copyright © ICYING. All rights reserved
 
 🧊 **SOLUTION**
 
-![아이싱시스템3.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90c4c05c-e27b-45fb-9511-e1b2b5d8defe/아이싱시스템3.png)
+![아이싱시스템3](https://user-images.githubusercontent.com/67955977/152625821-c6e05fbf-b273-4258-9910-612dcc202fb7.png)
+
 
 **예상 이용자** : 포장 및 배달에 아이스팩을 사용하는 가게 업주, 배달음식이나 식품 배송을 이용하는 모든 가구
 
@@ -51,8 +53,8 @@ Copyright © ICYING. All rights reserved
 ⇒ 업체는 아이스팩을 계속 사지 않아도 되고, 기부자는 집에 남아도는 아이스팩으로 나만의 환경 리워드를 쌓아나갈 수 있다.
 
 🧊 **Tools (기술 구성 요소 기능 소개)** 
+![tools](https://user-images.githubusercontent.com/67955977/152625831-14ac803f-5075-4044-8743-e106b7d6a0af.png)
 
-![tools.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae2be7b7-895a-447b-bc66-9eb788b4500a/tools.png)
 
 - **Google Cloud Platform :**
     - **Compute Engine**
@@ -99,18 +101,16 @@ Copyright © ICYING. All rights reserved
 
 🧊 **아키텍처**
 
-![architecture.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93b89fd1-4075-419d-854b-c27a6252064a/architecture.png)
+![architecture](https://user-images.githubusercontent.com/67955977/152625840-38fa676f-a968-4f57-91a4-51c4a55bf224.png)
+
 
 🧊 **UI/UX**
 
-<aside>
-💡 **캡처해서 첨부 부탁드립니다&^^ 흐름도 느낌으로**
-
-</aside>
 
 🧊 **ERD**
 
-![erd.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f17fe426-c276-4851-aa2f-21ce468f2d75/erd.jpg)
+![erd](https://user-images.githubusercontent.com/67955977/152625849-bcc840cf-a665-45a4-9d8e-f05bae40bb5b.jpg)
+
 
 ### 🧊 API Docs
 
