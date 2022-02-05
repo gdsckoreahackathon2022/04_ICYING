@@ -121,15 +121,6 @@ Copyright © ICYING. All rights reserved
 
 [https://documenter.getpostman.com/view/11419696/UVeFN7CL#927ca5e1-9451-4eff-be63-2bb68d60b3bd](https://documenter.getpostman.com/view/11419696/UVeFN7CL#927ca5e1-9451-4eff-be63-2bb68d60b3bd)
 
-~~🧊 **HOW TO USE**~~
-
-<aside>
-💡 작성 가능하다면. .
-
-구현 영상 녹화 가능하다면 plz.
-
-</aside>
-
  **🧊 성장 가능 전략**
 
 1. 단순하게 아이스팩을 주고 받는 교환 목적성 플랫폼이 아닌, 지역 주민들이 리사이클링 목적으로 생산한 **‘컨텐츠를 소비할 수 있는 플랫폼’으로서의 역할**을 하게 한다.
@@ -154,13 +145,7 @@ Copyright © ICYING. All rights reserved
 🧊 **TEAM**
 
 Coconut 장성은 김민지 권은지 김서현
-
 장성은 : BE Engineer
-
 김민지 : 팀장 / 기획 / 디자이너
-
 권은지 : Web FE Engineer
-
 김서현 : Web FE Engineer
-
-업무 분장
