@@ -31,6 +31,10 @@
   display: flex;
   justify-content: space-between;
 }
+.flexWrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .blueTxt {
   font-size: 1.4rem;
   font-weight: bold;
@@ -106,6 +110,7 @@
   width: 130px;
   height: 130px;  
   margin-bottom: 22px;
+  margin-top: 40px;
 }
 .placeReadName {
   font-size: 1.4rem;
@@ -120,6 +125,10 @@
   color: #FF89C0;
   font-weight: bold;
   margin-right: 8px;
+}
+.needDescript {
+  width: 400px;
+  padding: 10px 30px 40px;
 }
 
 
