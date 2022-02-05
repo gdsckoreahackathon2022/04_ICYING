@@ -12,7 +12,7 @@ function PlaceList() {
       'Authorization': token
     }
     const response = await axios.get(
-      baseUrl + "/restaurant/?latitude=37.5441270&longitude=126.9667812&page=1", {headers}     
+      baseUrl + "/restaurant/?latitude=35.8348707&longitude=128.580119&page=1", {headers}     
     );
     setPlaces(response.data.results)
     console.log(response.data.results)
@@ -23,7 +23,7 @@ function PlaceList() {
   const renderPlaces = places && places.map(place => {
     return (
       <div className='PlaceListContainer' key={place.restaurant_id}>
-        <a href={"/detail/${place.restaurant_id}"} style={{textDecoration: "none",
+        <a href={`/detail/${place.restaurant_id}`} style={{textDecoration: "none",
     color: "black"}} className='aflex'>
         <img className='listImg' src={place.logo_image_url}></img>
         <div className='placeTxtContainer'>
