@@ -1,6 +1,7 @@
 import React from 'react';
 import PlaceList from './PlaceList';
 import PlaceRead from './PlaceRead';
+import MapAPI from './MapAPI';
 import './NeedPage.css';
 import MapAPI from './MapAPI';
 
